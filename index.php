@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" media="all" href="css/app.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Average+Sans" rel="stylesheet">
     <title>Candor Nigeria</title>
 </head>
 
@@ -20,7 +21,8 @@
             <div>
                 <a href="#">
                     <img src="http://www.candor.ng/img/logo.png" alt="Candor Logo"></a>
-                <p>A hollistic business services company, offering Human Resource and Busness management service, to businesses great and small..</p>
+                <p>A hollistic business services company, offering Human Resource and Busness management service, to
+                    businesses great and small..</p>
             </div>
             <div class="nav-drawer-links">
                 <ul id="menu-nav-drawer" class="">
@@ -37,14 +39,19 @@
                 <ul id="menu-nav-socials" class="">
                     <li class="parent"><a href="#" data-name="Socials"><span>Socials</span></a>
                         <ul class="sub-menu">
-                            <li><a target="_blank" href="#" data-name="Facebook"><span>Facebook</span><i
-                                        class="material-icons">facebook</i></a></li>
-                            <li><a target="_blank" href="#" data-name="Twiiter"><span>Twitter</span><i
-                                        class="material-icons">twiiter</i></a></li>
-                            <li><a target="_blank" href="#" data-name="Instagram"><span>Instagram</span><i
-                                        class="material-icons">instagram</i></a></li>
-                            <li><a target="_blank" href="#" data-name="LinkedIn"><span>LinkedIn</span><i
-                                        class="material-icons">linkedin</i></a></li>
+                            <li><a target="_blank" href="#" data-name="Facebook">
+                                Facebook
+                                </a>
+                            </li>
+                            <li><a target="_blank" href="#" data-name="Twiiter">
+                                Twitter
+                                </a></li>
+                            <li><a target="_blank" href="#" data-name="Instagram">
+                                Instagram
+                                </a></li>
+                            <li><a target="_blank" href="#" data-name="LinkedIn">
+                                LinkedIn
+                            </a></li>
                         </ul>
                     </li>
                 </ul>
@@ -118,10 +125,8 @@
                     <li class="col-xs-12 col-sm-6 col-service">
                         <div>
                             <a href="#">
-                                <div class="service-img"><img width="880" height="860"
-                                        src="img/2.jpg"
-                                        class="auto-size" alt=""
-                                        srcset="img/1.jpg 880w, img/2.jpg 300w,img/1.jpg 768w"
+                                <div class="service-img"><img width="880" height="860" src="img/2.jpg" class="auto-size"
+                                        alt="" srcset="img/1.jpg 880w, img/2.jpg 300w,img/1.jpg 768w"
                                         sizes="(max-width: 880px) 100vw, 880px" /></div>
                                 <div class="service-info">
                                     <h5>Organizational Improvement</h5>
@@ -133,10 +138,8 @@
                     <li class="col-xs-12 col-sm-6 col-service">
                         <div>
                             <a href="#">
-                                <div class="service-img"><img width="880" height="860"
-                                        src="img/1.jpg"
-                                        class="auto-size" alt=""
-                                        srcset="img/2.jpg 880w, img/1.jpg 300w, img/1.jpg 768w"
+                                <div class="service-img"><img width="880" height="860" src="img/1.jpg" class="auto-size"
+                                        alt="" srcset="img/2.jpg 880w, img/1.jpg 300w, img/1.jpg 768w"
                                         sizes="(max-width: 880px) 100vw, 880px" /></div>
                                 <div class="service-info">
                                     <h5>Service Process Improvement</h5>
@@ -151,8 +154,7 @@
         <section id="careers" class="section-content section-start container-fluid container-max">
             <div class="row">
                 <div class="col-xs-12 col-start-img">
-                    <div><img width="1920" height="900"
-                            src="img/working.jpg" class="auto-size" alt=""
+                    <div><img width="1920" height="900" src="img/working.jpg" class="auto-size" alt=""
                             srcset="img/working.jpg 1920w, img/working.jpg 300w, img/working.jpg 768w, img/working.jpg 1024w"
                             sizes="(max-width: 1920px) 100vw, 1920px" /></div>
                 </div>

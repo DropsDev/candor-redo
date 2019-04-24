@@ -5932,7 +5932,7 @@ body div#ui-datepicker-div[style] {
     color: #fff;
     display: inline-block;
     font-size: 14px !important;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 600 !important;
     letter-spacing: 1px !important;
     padding: 15px 30px;
@@ -6110,54 +6110,6 @@ body div#ui-datepicker-div[style] {
     text-align: center
 }
 
-@font-face {
-    font-family: 'futura';
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-Regular.eot);
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-Regular.woff2) format("woff2"), url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-Regular.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'futura';
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-RegularItalic.eot);
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-RegularItalic.woff2) format("woff2"), url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-RegularItalic.woff) format("woff");
-    font-weight: 400;
-    font-style: italic
-}
-
-@font-face {
-    font-family: 'futura';
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-Bold.eot);
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-Bold.woff2) format("woff2"), url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-Bold.woff) format("woff");
-    font-weight: 700;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'futura';
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-BoldItalic.eot);
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-BoldItalic.woff2) format("woff2"), url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-BoldItalic.woff) format("woff");
-    font-weight: 700;
-    font-style: italic
-}
-
-@font-face {
-    font-family: 'futura';
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-Semibold.eot);
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-Semibold.woff2) format("woff2"), url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-Semibold.woff) format("woff");
-    font-weight: 600;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'futura';
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-SemiboldItalic.eot);
-    src: url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-SemiboldItalic.woff2) format("woff2"), url(//proximitydesigns.org/wp-content/themes/proximity/library/fonts/futura/futuraWeb-SemiboldItalic.woff) format("woff");
-    font-weight: 600;
-    font-style: italic
-}
-
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -6169,7 +6121,7 @@ body div#ui-datepicker-div[style] {
 
 body {
     background: #fff;
-    font-family: futura;
+    font-family: Average Sans;
     font-size: 20px;
     line-height: 32px;
     overflow-x: hidden;
@@ -6286,7 +6238,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 200
 }
 
@@ -6395,7 +6347,7 @@ hr {
 #display-medium-owl-demo .display-medium-date-read .display-medium-readtime {
     color: #555;
     font-size: 12px;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 14px;
@@ -7199,7 +7151,7 @@ hr {
 
 #testimonial .col-test-content>div>div {
     color: #555;
-    font-family: futura;
+    font-family: Average Sans;
     font-size: 1.75vw;
     line-height: 3vw
 }
@@ -7224,7 +7176,7 @@ hr {
 
 #testimonial .col-test-content>div>p {
     font-size: 14px;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 600;
     margin: 30px 0 0;
     line-height: 14px
@@ -7363,7 +7315,7 @@ hr {
 }
 
 #footer.footer-get-in-touch {
-    background: rgb(25,59,153) url(//proximitydesigns.org/wp-content/themes/proximity/images/footer-mark.svg) no-repeat center center;
+    background: rgb(25,59,153);
     background-size: 28%
 }
 
@@ -7847,7 +7799,7 @@ hr {
 .section-accordion li:after {
     color: rgb(25,59,153);
     content: attr(data-count);
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     left: -60px;
     position: absolute;
     top: 60px
@@ -8317,7 +8269,7 @@ hr {
 }
 
 .section-financials .financials-list li {
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     margin-bottom: 15px;
     padding-left: 20px;
     position: relative
@@ -8634,7 +8586,7 @@ hr {
 .section-jobs a span:last-child {
     color: #888;
     font-weight: 600;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     padding-right: 60px;
     text-align: right;
     white-space: nowrap;
@@ -8911,7 +8863,7 @@ hr {
 .section-products .row-products-list ul li {
     cursor: pointer;
     display: block;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 14px;
@@ -9183,7 +9135,7 @@ hr {
 .section-quote blockquote {
     border: 0 none;
     font-size: 70px;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 700;
     line-height: 70px;
     padding: 0;
@@ -9396,13 +9348,13 @@ hr {
 }
 
 .section-reports .reports-list>li p {
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 16px;
     line-height: 16px
 }
 
 .section-reports .reports-list>li>ul li {
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 16px;
@@ -9512,7 +9464,7 @@ hr {
 .section-stats .col-stat strong,
 .section-stats .col-stat span {
     color: #555;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     display: block
 }
 
@@ -9639,7 +9591,7 @@ hr {
 .section-team li section {
     color: #fff;
     bottom: 0;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     left: 0;
     padding: 45px 45px 45px 50px;
     position: absolute;
@@ -9922,7 +9874,7 @@ hr {
 
 .table-stylized tr td {
     border: 0 none;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     display: block;
     padding: 0
 }
@@ -10005,7 +9957,7 @@ hr {
 .table-stylized-blocks table tbody td {
     border: 0 none;
     display: block;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
 }
 
 .table-stylized-blocks table tbody td:first-child {
@@ -10447,7 +10399,7 @@ hr {
     color: #333;
     display: block;
     font-size: 12px;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     letter-spacing: 1px;
     font-weight: 600;
     padding: 0 20px;
@@ -10600,7 +10552,7 @@ hr {
     display: block;
     font-size: 20px;
     font-size: 2vw;
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 600;
     line-height: 20px;
     line-height: 2vw;
@@ -10727,7 +10679,7 @@ hr {
 
 #nav-drawer .nav-drawer-container .copyright p {
     color: rgba(255, 255, 255, .5);
-    font-family: "futura", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 600;
     font-size: 15px;
     line-height: 24px
