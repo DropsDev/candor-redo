@@ -1,0 +1,13 @@
+{
+  "name": "Parceler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@material/select": "^1.1.1",
+    "@material/top-app-bar": "^1.1.1",
+    "assets": "^3.0.1",
+    "grapesjs": "^0.14.57",
+    "parcel-bundler": "^1.12.3"
+  }
+}

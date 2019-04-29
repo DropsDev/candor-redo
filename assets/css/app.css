@@ -1,19 +1,32 @@
-/*!
-	Theme Name: Proximity Designs
-	Theme URI: https://proximitydesigns.org
-	Description: Base theme for Proximity Designs.
-	Author: The Taproot Agency
-	Author URI: https://taproot.agency
-	Version: 1.0
-	Tags: SASS, Bootstrap 3
 
-	License: GNU General Public License v2.0
-	License URI: http://www.opensource.org/licenses/gpl-license.php
-*/
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-.m-0{
+@import url('https://fonts.googleapis.com/css?family=Average+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+.services img {
+    max-height: 500px;
+    width: auto !important;
+    border-radius: 6px;
+    box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
+    padding: 0 !important;
+}
+
+.services .col-side-img {
+    text-align: center
+}
+
+.m-0 {
     margin: 0;
 }
+
+.liner {
+    margin-top: 50px;
+}
+
+.liner span {
+    height: 200px !important;
+}
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -297,17 +310,17 @@ th {
     }
 
     .btn>.caret,
-    #header-bar nav ul li.highlighted a>.caret,
+    .header-bar nav ul li.highlighted a>.caret,
     .dropup>.btn>.caret,
-    #header-bar nav ul li.highlighted .dropup>a>.caret {
+    .header-bar nav ul li.highlighted .dropup>a>.caret {
         border-top-color: #000 !important
     }
 
     .label,
     .btn-link,
     #display-medium-owl-demo .display-medium-readmore,
-    #nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
-    #what-we-do .service-info p,
+    .nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
+    .what-we-do .service-info p,
     #display-medium-owl-demo .display-medium-date-read .display-medium-date,
     #display-medium-owl-demo .display-medium-date-read .display-medium-readtime {
         border: 1px solid #000
@@ -4361,7 +4374,7 @@ select[multiple].input-lg {
 }
 
 .btn,
-#header-bar nav ul li.highlighted a {
+.header-bar nav ul li.highlighted a {
     display: inline-block;
     margin-bottom: 0;
     font-weight: 400;
@@ -4383,35 +4396,35 @@ select[multiple].input-lg {
 }
 
 .btn:focus,
-#header-bar nav ul li.highlighted a:focus,
+.header-bar nav ul li.highlighted a:focus,
 .btn.focus,
-#header-bar nav ul li.highlighted a.focus,
+.header-bar nav ul li.highlighted a.focus,
 .btn:active:focus,
-#header-bar nav ul li.highlighted a:active:focus,
+.header-bar nav ul li.highlighted a:active:focus,
 .btn:active.focus,
-#header-bar nav ul li.highlighted a:active.focus,
+.header-bar nav ul li.highlighted a:active.focus,
 .btn.active:focus,
-#header-bar nav ul li.highlighted a.active:focus,
+.header-bar nav ul li.highlighted a.active:focus,
 .btn.active.focus,
-#header-bar nav ul li.highlighted a.active.focus {
+.header-bar nav ul li.highlighted a.active.focus {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px
 }
 
 .btn:hover,
-#header-bar nav ul li.highlighted a:hover,
+.header-bar nav ul li.highlighted a:hover,
 .btn:focus,
-#header-bar nav ul li.highlighted a:focus,
+.header-bar nav ul li.highlighted a:focus,
 .btn.focus,
-#header-bar nav ul li.highlighted a.focus {
+.header-bar nav ul li.highlighted a.focus {
     color: #333;
     text-decoration: none
 }
 
 .btn:active,
-#header-bar nav ul li.highlighted a:active,
+.header-bar nav ul li.highlighted a:active,
 .btn.active,
-#header-bar nav ul li.highlighted a.active {
+.header-bar nav ul li.highlighted a.active {
     outline: 0;
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
@@ -4419,12 +4432,12 @@ select[multiple].input-lg {
 }
 
 .btn.disabled,
-#header-bar nav ul li.highlighted a.disabled,
+.header-bar nav ul li.highlighted a.disabled,
 .btn[disabled],
-#header-bar nav ul li.highlighted a[disabled],
+.header-bar nav ul li.highlighted a[disabled],
 fieldset[disabled] .btn,
-fieldset[disabled] #header-bar nav ul li.highlighted a,
-#header-bar nav ul li.highlighted fieldset[disabled] a {
+fieldset[disabled] .header-bar nav ul li.highlighted a,
+.header-bar nav ul li.highlighted fieldset[disabled] a {
     cursor: not-allowed;
     opacity: .65;
     filter: alpha(opacity=65);
@@ -4433,10 +4446,10 @@ fieldset[disabled] #header-bar nav ul li.highlighted a,
 }
 
 a.btn.disabled,
-#header-bar nav ul li.highlighted a.disabled,
+.header-bar nav ul li.highlighted a.disabled,
 fieldset[disabled] a.btn,
-fieldset[disabled] #header-bar nav ul li.highlighted a,
-#header-bar nav ul li.highlighted fieldset[disabled] a {
+fieldset[disabled] .header-bar nav ul li.highlighted a,
+.header-bar nav ul li.highlighted fieldset[disabled] a {
     pointer-events: none
 }
 
@@ -4832,7 +4845,7 @@ fieldset[disabled] .btn-danger.focus {
 
 .btn-link,
 #display-medium-owl-demo .display-medium-readmore,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a {
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a {
     color: #337ab7;
     font-weight: 400;
     border-radius: 0
@@ -4840,21 +4853,21 @@ fieldset[disabled] .btn-danger.focus {
 
 .btn-link,
 #display-medium-owl-demo .display-medium-readmore,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
 .btn-link:active,
 #display-medium-owl-demo .display-medium-readmore:active,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:active,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:active,
 .btn-link.active,
 #display-medium-owl-demo .active.display-medium-readmore,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a.active,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a.active,
 .btn-link[disabled],
 #display-medium-owl-demo .display-medium-readmore[disabled],
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a[disabled],
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a[disabled],
 fieldset[disabled] .btn-link,
 fieldset[disabled] #display-medium-owl-demo .display-medium-readmore,
 #display-medium-owl-demo fieldset[disabled] .display-medium-readmore,
-fieldset[disabled] #nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul fieldset[disabled] a {
+fieldset[disabled] .nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul fieldset[disabled] a {
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none
@@ -4862,25 +4875,25 @@ fieldset[disabled] #nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
 
 .btn-link,
 #display-medium-owl-demo .display-medium-readmore,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
 .btn-link:hover,
 #display-medium-owl-demo .display-medium-readmore:hover,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover,
 .btn-link:focus,
 #display-medium-owl-demo .display-medium-readmore:focus,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus,
 .btn-link:active,
 #display-medium-owl-demo .display-medium-readmore:active,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:active {
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:active {
     border-color: transparent
 }
 
 .btn-link:hover,
 #display-medium-owl-demo .display-medium-readmore:hover,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover,
 .btn-link:focus,
 #display-medium-owl-demo .display-medium-readmore:focus,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus {
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus {
     color: #23527c;
     text-decoration: underline;
     background-color: transparent
@@ -4888,20 +4901,20 @@ fieldset[disabled] #nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
 
 .btn-link[disabled]:hover,
 #display-medium-owl-demo .display-medium-readmore[disabled]:hover,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a[disabled]:hover,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a[disabled]:hover,
 .btn-link[disabled]:focus,
 #display-medium-owl-demo .display-medium-readmore[disabled]:focus,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a[disabled]:focus,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a[disabled]:focus,
 fieldset[disabled] .btn-link:hover,
 fieldset[disabled] #display-medium-owl-demo .display-medium-readmore:hover,
 #display-medium-owl-demo fieldset[disabled] .display-medium-readmore:hover,
-fieldset[disabled] #nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul fieldset[disabled] a:hover,
+fieldset[disabled] .nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul fieldset[disabled] a:hover,
 fieldset[disabled] .btn-link:focus,
 fieldset[disabled] #display-medium-owl-demo .display-medium-readmore:focus,
 #display-medium-owl-demo fieldset[disabled] .display-medium-readmore:focus,
-fieldset[disabled] #nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul fieldset[disabled] a:focus {
+fieldset[disabled] .nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul fieldset[disabled] a:focus {
     color: #777;
     text-decoration: none
 }
@@ -5925,7 +5938,7 @@ body div#ui-datepicker-div[style] {
 }
 
 .gform_wrapper .button {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     border-radius: 0;
     border: 0 none;
     box-shadow: none;
@@ -6182,7 +6195,7 @@ body.nav-open {
 }
 
 ::selection {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     color: #fff
 }
 
@@ -6203,7 +6216,7 @@ video {
 }
 
 a {
-    color: rgb(255,129,0);
+    color: rgb(255, 129, 0);
     transition: all .25s ease
 }
 
@@ -6243,7 +6256,7 @@ h5 {
 }
 
 h1 {
-    color: rgb(25,59,153);
+    color: rgb(25, 59, 153);
     font-size: 60px;
     line-height: 70px;
     margin: 0 0 30px
@@ -6287,10 +6300,10 @@ h3 {
 
 h4 {
     color: #555;
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 300 !important;
     line-height: 40px;
-    margin: 0 0 30px
+    margin: 0 0 30px;
 }
 
 @media (max-width:767px) {
@@ -6329,7 +6342,7 @@ hr {
 }
 
 .liner span {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     height: 0;
     position: absolute;
     left: 50%;
@@ -6341,8 +6354,8 @@ hr {
 .label,
 .btn-link,
 #display-medium-owl-demo .display-medium-readmore,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
-#what-we-do .service-info p,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
+.what-we-do .service-info p,
 #display-medium-owl-demo .display-medium-date-read .display-medium-date,
 #display-medium-owl-demo .display-medium-date-read .display-medium-readtime {
     color: #555;
@@ -6356,16 +6369,16 @@ hr {
 
 .btn-hover,
 .btn,
-#header-bar nav ul li.highlighted a,
-#who-we-are .hero a>span {
+.header-bar nav ul li.highlighted a,
+.our-story .hero a>span {
     overflow: hidden;
     position: relative
 }
 
 .btn-hover span,
 .btn span,
-#header-bar nav ul li.highlighted a span,
-#who-we-are .hero a>span span {
+.header-bar nav ul li.highlighted a span,
+.our-story .hero a>span span {
     display: block;
     position: relative;
     transition: all .25s ease .05s;
@@ -6374,9 +6387,9 @@ hr {
 
 .btn-hover:before,
 .btn:before,
-#header-bar nav ul li.highlighted a:before,
-#who-we-are .hero a>span:before {
-    background: rgb(25,59,153);
+.header-bar nav ul li.highlighted a:before,
+.our-story .hero a>span:before {
+    background: rgb(25, 59, 153);
     content: "";
     height: 100%;
     left: 0;
@@ -6391,30 +6404,30 @@ hr {
 
 .btn-hover:hover,
 .btn:hover,
-#header-bar nav ul li.highlighted a:hover,
-#who-we-are .hero a>span:hover {
+.header-bar nav ul li.highlighted a:hover,
+.our-story .hero a>span:hover {
     color: #fff;
     transition: color .25s cubic-bezier(.405, .07, .575, .995)
 }
 
 .btn-hover:hover span,
 .btn:hover span,
-#header-bar nav ul li.highlighted a:hover span,
-#who-we-are .hero a>span:hover span {
+.header-bar nav ul li.highlighted a:hover span,
+.our-story .hero a>span:hover span {
     transition: none
 }
 
 .btn-hover:hover:before,
 .btn:hover:before,
-#header-bar nav ul li.highlighted a:hover:before,
-#who-we-are .hero a>span:hover:before {
+.header-bar nav ul li.highlighted a:hover:before,
+.our-story .hero a>span:hover:before {
     transform-origin: 0 50%;
     transform: scaleX(1);
     transition: transform .4s cubic-bezier(.405, .07, .575, .995)
 }
 
 .btn,
-#header-bar nav ul li.highlighted a {
+.header-bar nav ul li.highlighted a {
     background: #efefef;
     border-radius: 0;
     border: 0 none;
@@ -6430,8 +6443,8 @@ hr {
 
 .btn-link,
 #display-medium-owl-demo .display-medium-readmore,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a {
-    color: rgb(255,129,0);
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a {
+    color: rgb(255, 129, 0);
     display: inline-block;
     overflow: hidden;
     padding-bottom: 11px;
@@ -6441,20 +6454,20 @@ hr {
 
 .btn-link:hover,
 #display-medium-owl-demo .display-medium-readmore:hover,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover,
 .btn-link:focus,
 #display-medium-owl-demo .display-medium-readmore:focus,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus {
-    color: rgb(25,59,153);
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus {
+    color: rgb(25, 59, 153);
     text-decoration: none
 }
 
 .btn-link:hover:before,
 #display-medium-owl-demo .display-medium-readmore:hover:before,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover:before,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover:before,
 .btn-link:focus:before,
 #display-medium-owl-demo .display-medium-readmore:focus:before,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus:before {
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus:before {
     transform-origin: 0 50%;
     transform: scaleX(1);
     transition: transform .4s cubic-bezier(.405, .07, .575, .995)
@@ -6462,10 +6475,10 @@ hr {
 
 .btn-link:before,
 #display-medium-owl-demo .display-medium-readmore:before,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:before,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:before,
 .btn-link:after,
 #display-medium-owl-demo .display-medium-readmore:after,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:after {
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:after {
     background: rgba(182, 164, 130, .35);
     bottom: 3px;
     content: "";
@@ -6478,15 +6491,15 @@ hr {
 
 .btn-link:before,
 #display-medium-owl-demo .display-medium-readmore:before,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:before {
-    background: rgb(25,59,153);
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:before {
+    background: rgb(25, 59, 153);
     transform-origin: 100% 50%;
     transform: scaleX(0);
     transition: transform .4s cubic-bezier(.405, .07, .575, .995) .1s, transform-origin .1s cubic-bezier(.405, .07, .575, .995) 0s;
     z-index: 2
 }
 
-#main {
+.main {
     background: #fff;
     margin-bottom: 50vw;
     position: relative;
@@ -6494,16 +6507,16 @@ hr {
 }
 
 @media (max-width:767px) {
-    #main {
+    .main {
         margin-bottom: 300px
     }
 }
 
-.no-footer #main {
+.no-footer .main {
     margin-bottom: 0
 }
 
-.no-footer #main .liner {
+.no-footer .main .liner {
     display: none
 }
 
@@ -6512,7 +6525,7 @@ hr {
     max-width: 1600px
 }
 
-#who-we-are .intro {
+.our-story .intro {
     align-items: center;
     display: flex;
     padding: 90px 0;
@@ -6520,7 +6533,7 @@ hr {
 }
 
 @media (max-width:991px) {
-    #who-we-are .intro {
+    .our-story .intro {
         display: block;
         text-align: center;
         padding: 60px 0
@@ -6528,17 +6541,17 @@ hr {
 }
 
 @media (max-width:767px) {
-    #who-we-are .intro {
+    .our-story .intro {
         padding: 45px 0
     }
 }
 
-#who-we-are .intro h1,
-#who-we-are .intro p {
+.our-story .intro h1,
+.our-story .intro p {
     margin: 0
 }
 
-#who-we-are .intro h1 {
+.our-story .intro h1 {
     text-align: center;
     padding-right: 60px;
     width: 50%;
@@ -6546,14 +6559,14 @@ hr {
 }
 
 @media (max-width:1199px) {
-    #who-we-are .intro h1 {
+    .our-story .intro h1 {
         font-size: 5vw;
         line-height: 4.5vw
     }
 }
 
 @media (max-width:991px) {
-    #who-we-are .intro h1 {
+    .our-story .intro h1 {
         display: inline-block;
         font-size: 6vw;
         line-height: 5.5vw;
@@ -6564,27 +6577,27 @@ hr {
 }
 
 @media (max-width:767px) {
-    #who-we-are .intro h1 {
+    .our-story .intro h1 {
         font-size: 9vw;
         line-height: 8.5vw;
         width: 80%
     }
 }
 
-#who-we-are .intro h1 em {
+.our-story .intro h1 em {
     font-style: normal;
     padding-right: 100px;
     position: relative
 }
 
 @media (max-width:767px) {
-    #who-we-are .intro h1 em {
+    .our-story .intro h1 em {
         padding-right: 75px
     }
 }
 
-#who-we-are .intro h1 em:after {
-    background: rgb(255,129,0);
+.our-story .intro h1 em:after {
+    background: rgb(255, 129, 0);
     content: "";
     height: 3px;
     margin-top: 3px;
@@ -6595,23 +6608,23 @@ hr {
 }
 
 @media (max-width:767px) {
-    #who-we-are .intro h1 em:after {
+    .our-story .intro h1 em:after {
         width: 60px
     }
 }
 
-#who-we-are .intro h1 span {
+.our-story .intro h1 span {
     display: inline-block;
     padding-right: 45px
 }
 
 @media (max-width:767px) {
-    #who-we-are .intro h1 span {
+    .our-story .intro h1 span {
         padding-right: 0
     }
 }
 
-#who-we-are .intro p {
+.our-story .intro p {
     font-size: 18px;
     line-height: 30px;
     max-width: 510px;
@@ -6620,14 +6633,14 @@ hr {
 }
 
 @media (max-width:1199px) {
-    #who-we-are .intro p {
+    .our-story .intro p {
         max-width: none;
         padding-right: 10%
     }
 }
 
 @media (max-width:991px) {
-    #who-we-are .intro p {
+    .our-story .intro p {
         margin: 0 auto;
         max-width: 450px;
         padding: 0 30px;
@@ -6635,24 +6648,24 @@ hr {
     }
 }
 
-#who-we-are .hero {
+.our-story .hero {
     margin-bottom: 80px;
     padding: 0 80px;
     position: relative
 }
 
 @media (max-width:767px) {
-    #who-we-are .hero {
+    .our-story .hero {
         margin-bottom: 30px;
         padding: 0 30px
     }
 }
 
-#who-we-are .hero>div {
+.our-story .hero>div {
     position: relative
 }
 
-#who-we-are .hero>div:after {
+.our-story .hero>div:after {
     background: #fff;
     bottom: -80px;
     content: "";
@@ -6663,19 +6676,19 @@ hr {
     z-index: 2
 }
 
-#who-we-are .hero>div img {
+.our-story .hero>div img {
     position: relative;
     z-index: 1
 }
 
-#who-we-are .hero>div .hero-extra {
+.our-story .hero>div .hero-extra {
     bottom: 0;
     left: 0;
     position: absolute;
     z-index: 2
 }
 
-#who-we-are .hero a {
+.our-story .hero a {
     bottom: 0;
     color: #333;
     display: block;
@@ -6686,7 +6699,7 @@ hr {
 }
 
 @media (max-width:991px) {
-    #who-we-are .hero a {
+    .our-story .hero a {
         bottom: auto;
         margin: -30px auto 0 auto;
         position: relative;
@@ -6696,56 +6709,56 @@ hr {
 }
 
 @media (max-width:767px) {
-    #who-we-are .hero a {
+    .our-story .hero a {
         margin: 0 auto;
         width: 100%
     }
 }
 
-#who-we-are .hero a:hover h5 {
+.our-story .hero a:hover h5 {
     transition: none
 }
 
-#who-we-are .hero a:hover .label,
-#who-we-are .hero a:hover .btn-link,
-#who-we-are .hero a:hover #display-medium-owl-demo .display-medium-readmore,
-#display-medium-owl-demo #who-we-are .hero a:hover .display-medium-readmore,
-#who-we-are .hero a:hover #nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul #who-we-are .hero a:hover a,
-#who-we-are .hero a:hover #what-we-do .service-info p,
-#what-we-do .service-info #who-we-are .hero a:hover p,
-#who-we-are .hero a:hover #display-medium-owl-demo .display-medium-date-read .display-medium-date,
-#display-medium-owl-demo .display-medium-date-read #who-we-are .hero a:hover .display-medium-date,
-#who-we-are .hero a:hover #display-medium-owl-demo .display-medium-date-read .display-medium-readtime,
-#display-medium-owl-demo .display-medium-date-read #who-we-are .hero a:hover .display-medium-readtime {
+.our-story .hero a:hover .label,
+.our-story .hero a:hover .btn-link,
+.our-story .hero a:hover #display-medium-owl-demo .display-medium-readmore,
+#display-medium-owl-demo .our-story .hero a:hover .display-medium-readmore,
+.our-story .hero a:hover .nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul .our-story .hero a:hover a,
+.our-story .hero a:hover .what-we-do .service-info p,
+.what-we-do .service-info .our-story .hero a:hover p,
+.our-story .hero a:hover #display-medium-owl-demo .display-medium-date-read .display-medium-date,
+#display-medium-owl-demo .display-medium-date-read .our-story .hero a:hover .display-medium-date,
+.our-story .hero a:hover #display-medium-owl-demo .display-medium-date-read .display-medium-readtime,
+#display-medium-owl-demo .display-medium-date-read .our-story .hero a:hover .display-medium-readtime {
     color: rgba(255, 255, 255, .5);
     transition: all .25s ease
 }
 
-#who-we-are .hero a:hover i {
+.our-story .hero a:hover i {
     right: 30px;
     transition: right .2s cubic-bezier(.72, .01, .28, .98)
 }
 
-#who-we-are .hero a h5 {
+.our-story .hero a h5 {
     margin-bottom: 6px;
     position: relative;
     transition: all .25s ease .2s;
     z-index: 2
 }
 
-#who-we-are .hero a .label,
-#who-we-are .hero a .btn-link,
-#who-we-are .hero a #display-medium-owl-demo .display-medium-readmore,
-#display-medium-owl-demo #who-we-are .hero a .display-medium-readmore,
-#who-we-are .hero a #nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul #who-we-are .hero a a,
-#who-we-are .hero a #what-we-do .service-info p,
-#what-we-do .service-info #who-we-are .hero a p,
-#who-we-are .hero a #display-medium-owl-demo .display-medium-date-read .display-medium-date,
-#display-medium-owl-demo .display-medium-date-read #who-we-are .hero a .display-medium-date,
-#who-we-are .hero a #display-medium-owl-demo .display-medium-date-read .display-medium-readtime,
-#display-medium-owl-demo .display-medium-date-read #who-we-are .hero a .display-medium-readtime {
+.our-story .hero a .label,
+.our-story .hero a .btn-link,
+.our-story .hero a #display-medium-owl-demo .display-medium-readmore,
+#display-medium-owl-demo .our-story .hero a .display-medium-readmore,
+.our-story .hero a .nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul .our-story .hero a a,
+.our-story .hero a .what-we-do .service-info p,
+.what-we-do .service-info .our-story .hero a p,
+.our-story .hero a #display-medium-owl-demo .display-medium-date-read .display-medium-date,
+#display-medium-owl-demo .display-medium-date-read .our-story .hero a .display-medium-date,
+.our-story .hero a #display-medium-owl-demo .display-medium-date-read .display-medium-readtime,
+#display-medium-owl-demo .display-medium-date-read .our-story .hero a .display-medium-readtime {
     position: relative;
     transition: all .25s ease .2s;
     z-index: 2
@@ -6753,37 +6766,37 @@ hr {
 
 @media (max-width:767px) {
 
-    #who-we-are .hero a .label,
-    #who-we-are .hero a .btn-link,
-    #who-we-are .hero a #display-medium-owl-demo .display-medium-readmore,
-    #display-medium-owl-demo #who-we-are .hero a .display-medium-readmore,
-    #who-we-are .hero a #nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
-    #nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul #who-we-are .hero a a,
-    #who-we-are .hero a #what-we-do .service-info p,
-    #what-we-do .service-info #who-we-are .hero a p,
-    #who-we-are .hero a #display-medium-owl-demo .display-medium-date-read .display-medium-date,
-    #display-medium-owl-demo .display-medium-date-read #who-we-are .hero a .display-medium-date,
-    #who-we-are .hero a #display-medium-owl-demo .display-medium-date-read .display-medium-readtime,
-    #display-medium-owl-demo .display-medium-date-read #who-we-are .hero a .display-medium-readtime {
+    .our-story .hero a .label,
+    .our-story .hero a .btn-link,
+    .our-story .hero a #display-medium-owl-demo .display-medium-readmore,
+    #display-medium-owl-demo .our-story .hero a .display-medium-readmore,
+    .our-story .hero a .nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
+    .nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul .our-story .hero a a,
+    .our-story .hero a .what-we-do .service-info p,
+    .what-we-do .service-info .our-story .hero a p,
+    .our-story .hero a #display-medium-owl-demo .display-medium-date-read .display-medium-date,
+    #display-medium-owl-demo .display-medium-date-read .our-story .hero a .display-medium-date,
+    .our-story .hero a #display-medium-owl-demo .display-medium-date-read .display-medium-readtime,
+    #display-medium-owl-demo .display-medium-date-read .our-story .hero a .display-medium-readtime {
         letter-spacing: 1px;
         text-transform: none
     }
 }
 
-#who-we-are .hero a>span {
+.our-story .hero a>span {
     background: #f8f8f8;
     display: block;
     padding: 45px 90px 45px 60px
 }
 
 @media (max-width:767px) {
-    #who-we-are .hero a>span {
+    .our-story .hero a>span {
         padding: 30px 75px 30px 30px
     }
 }
 
-#who-we-are .hero a i {
-    color: rgb(255,129,0);
+.our-story .hero a i {
+    color: rgb(255, 129, 0);
     margin-top: -12px;
     position: absolute;
     right: 45px;
@@ -6793,146 +6806,146 @@ hr {
 }
 
 @media (max-width:767px) {
-    #who-we-are .hero a i {
+    .our-story .hero a i {
         right: 30px
     }
 }
 
-#what-we-do {
+.what-we-do {
     background: #f8f8f8;
     padding: 120px 0 60px
 }
 
 @media (max-width:991px) {
-    #what-we-do {
+    .what-we-do {
         padding: 90px 0 60px
     }
 }
 
 @media (max-width:767px) {
-    #what-we-do {
+    .what-we-do {
         padding: 45px 0
     }
 }
 
-#what-we-do h2 {
-    color: rgb(25,59,153)
+.what-we-do h2 {
+    color: rgb(25, 59, 153)
 }
 
-#what-we-do .row-service-intro {
+.what-we-do .row-service-intro {
     margin-bottom: 90px
 }
 
 @media (max-width:767px) {
-    #what-we-do .row-service-intro {
+    .what-we-do .row-service-intro {
         margin-bottom: 15px
     }
 
-    #what-we-do .row-service-intro>div {
+    .what-we-do .row-service-intro>div {
         padding: 0 30px
     }
 }
 
 @media (max-width:767px) {
-    #what-we-do .row-service-intro p {
+    .what-we-do .row-service-intro p {
         font-size: 18px;
         line-height: 30px
     }
 }
 
-#what-we-do .row-services {
+.what-we-do .row-services {
     margin: 0;
     padding: 0 6%
 }
 
 @media (max-width:991px) {
-    #what-we-do .row-services {
+    .what-we-do .row-services {
         padding: 0 2%
     }
 }
 
 @media (max-width:767px) {
-    #what-we-do .row-services {
+    .what-we-do .row-services {
         display: block;
         padding: 0 15px
     }
 }
 
-#what-we-do .col-service {
+.what-we-do .col-service {
     align-items: center;
     display: flex;
     flex-wrap: wrap
 }
 
 @media (max-width:767px) {
-    #what-we-do .col-service {
+    .what-we-do .col-service {
         display: block;
         margin-bottom: 30px;
         padding: 0
     }
 
-    #what-we-do .col-service:last-child {
+    .what-we-do .col-service:last-child {
         margin-bottom: 0
     }
 }
 
-#what-we-do .col-service>div {
+.what-we-do .col-service>div {
     padding: 0 6%
 }
 
 @media (max-width:991px) {
-    #what-we-do .col-service>div {
+    .what-we-do .col-service>div {
         padding: 0 4%;
         margin-bottom: 30px
     }
 }
 
 @media (max-width:767px) {
-    #what-we-do .col-service>div {
+    .what-we-do .col-service>div {
         padding: 0
     }
 }
 
-#what-we-do .col-service a {
+.what-we-do .col-service a {
     display: block;
     overflow: hidden;
     position: relative
 }
 
-#what-we-do .col-service a:hover .service-img {
+.what-we-do .col-service a:hover .service-img {
     transform: scale(.9)
 }
 
 @media (max-width:767px) {
-    #what-we-do .col-service a:hover .service-img {
+    .what-we-do .col-service a:hover .service-img {
         transform: none
     }
 }
 
-#what-we-do .col-service a:hover .service-img img {
+.what-we-do .col-service a:hover .service-img img {
     transform: scale(1.15)
 }
 
 @media (max-width:767px) {
-    #what-we-do .col-service a:hover .service-img img {
+    .what-we-do .col-service a:hover .service-img img {
         transform: none
     }
 }
 
-#what-we-do .col-service a:hover .service-info {
+.what-we-do .col-service a:hover .service-info {
     top: -60px;
     width: 86%;
     transition: top .6s cubic-bezier(.72, .01, .28, .98), width .6s cubic-bezier(.72, .01, .28, .98)
 }
 
 @media (max-width:991px) {
-    #what-we-do .col-service a:hover .service-info {
+    .what-we-do .col-service a:hover .service-info {
         top: auto;
         width: 100%
     }
 }
 
-#what-we-do .service-img {
+.what-we-do .service-img {
     display: block;
     overflow: hidden;
     position: relative;
@@ -6940,11 +6953,11 @@ hr {
     z-index: 1
 }
 
-#what-we-do .service-img img {
+.what-we-do .service-img img {
     transition: transform .5s cubic-bezier(.72, .01, .28, .98)
 }
 
-#what-we-do .service-info {
+.what-we-do .service-info {
     background: #f8f8f8;
     color: #333;
     display: block;
@@ -6958,7 +6971,7 @@ hr {
 }
 
 @media (max-width:991px) {
-    #what-we-do .service-info {
+    .what-we-do .service-info {
         left: auto;
         top: auto;
         padding: 30px 15px;
@@ -6967,27 +6980,27 @@ hr {
 }
 
 @media (max-width:767px) {
-    #what-we-do .service-info {
+    .what-we-do .service-info {
         padding: 20px 15px
     }
 }
 
-#what-we-do .service-info h5,
-#what-we-do .service-info p {
+.what-we-do .service-info h5,
+.what-we-do .service-info p {
     padding-right: 45px
 }
 
-#what-we-do .service-info h5 {
+.what-we-do .service-info h5 {
     line-height: 32px;
     margin-bottom: 6px
 }
 
-#what-we-do .service-info p {
+.what-we-do .service-info p {
     margin: 0
 }
 
-#what-we-do .service-info i {
-    color: rgb(255,129,0);
+.what-we-do .service-info i {
+    color: rgb(255, 129, 0);
     margin-top: -12px;
     position: absolute;
     right: 5px;
@@ -7212,12 +7225,12 @@ hr {
     width: 60px
 }
 
-#careers {
+.careers {
     margin: 120px 0px;
 }
 
 #footer {
-    background-color: rgb(25,59,153);
+    background-color: rgb(25, 59, 153);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -7315,7 +7328,7 @@ hr {
 }
 
 #footer.footer-get-in-touch {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     background-size: 28%
 }
 
@@ -7399,7 +7412,7 @@ hr {
 }
 
 .col-header-text.header-post .header-text:before {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     content: "";
     height: 3px;
     left: 12%;
@@ -7558,7 +7571,7 @@ hr {
 }
 
 .container-entries h4 a:hover {
-    color: rgb(25,59,153)
+    color: rgb(25, 59, 153)
 }
 
 .container-entries p {
@@ -7610,12 +7623,10 @@ hr {
 
 #menu-nav-socials-1 ul a {
     align-items: center;
-    color: #fff;
+    color: #333 !important;
     display: flex;
-    height: 60px;
     justify-content: center;
     position: relative;
-    width: 60px
 }
 
 @media (max-width:767px) {
@@ -7631,21 +7642,9 @@ hr {
     z-index: 2
 }
 
-#menu-nav-socials-1 ul a:after {
-    background: #333;
-    border-radius: 100%;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: all .25s ease;
-    width: 100%;
-    z-index: 1
-}
 
 #menu-nav-socials-1 ul a:hover:after {
-    background: rgb(255,129,0)
+    background: rgb(255, 129, 0)
 }
 
 .entry-content>section[class*=section] {
@@ -7689,7 +7688,7 @@ hr {
 
 .accordion-list>li header:before,
 .accordion-list>li header:after {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     content: "";
     position: absolute;
     top: 50%;
@@ -7754,7 +7753,7 @@ hr {
 }
 
 .accordion-list>li h2:after {
-    color: rgb(25,59,153);
+    color: rgb(25, 59, 153);
     content: attr(data-name);
     left: 0;
     opacity: 0;
@@ -7797,7 +7796,7 @@ hr {
 }
 
 .section-accordion li:after {
-    color: rgb(25,59,153);
+    color: rgb(25, 59, 153);
     content: attr(data-count);
     font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     left: -60px;
@@ -7820,7 +7819,7 @@ hr {
 }
 
 .section-accordion li>div {
-    border-left: 3px rgb(25,59,153) solid;
+    border-left: 3px rgb(25, 59, 153) solid;
     margin: 0 0 60px 30px;
     padding-left: 45px
 }
@@ -7884,15 +7883,15 @@ hr {
 }
 
 .section-content.section-start .col-start-info.col-right-side>div {
-    padding: 90px 10% 0 15%
+    padding: 90px 10% 30px 15%
 }
 
 .section-content.section-start .col-start-info.col-left-side>div {
-    padding: 90px 15% 0 10%
+    padding: 90px 15% 30px 10%
 }
 
 .section-content.section-start .col-start-info>div {
-    background: #fff;
+    background: #f8f8f8;
     margin-top: -150px;
     position: relative;
     z-index: 10
@@ -7919,8 +7918,8 @@ hr {
 .section-content.section-start .col-start-info>div .btn-link,
 .section-content.section-start .col-start-info>div #display-medium-owl-demo .display-medium-readmore,
 #display-medium-owl-demo .section-content.section-start .col-start-info>div .display-medium-readmore,
-.section-content.section-start .col-start-info>div #nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul .section-content.section-start .col-start-info>div a {
+.section-content.section-start .col-start-info>div .nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul .section-content.section-start .col-start-info>div a {
     margin-top: 45px
 }
 
@@ -7948,7 +7947,7 @@ hr {
 
 .section-content.section-side .col-start-info .start-header:before,
 .section-content.section-start .col-start-info .start-header:before {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     content: "";
     height: 100%;
     left: -45px;
@@ -8238,7 +8237,7 @@ hr {
 }
 
 .section-divider.small hr {
-    border-color: rgb(25,59,153);
+    border-color: rgb(25, 59, 153);
     border-width: 3px;
     margin: 0 auto;
     width: 100px
@@ -8283,7 +8282,7 @@ hr {
 }
 
 .section-financials .financials-list li:before {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     border-radius: 100%;
     content: "";
     height: 6px;
@@ -8392,6 +8391,10 @@ hr {
     }
 }
 
+.text-primary {
+    color: rgb(25, 59, 153);
+}
+
 .section-grid ul li h4 {
     font-weight: 700;
     margin-bottom: 60px;
@@ -8399,7 +8402,7 @@ hr {
 }
 
 .section-grid ul li h4:after {
-    background: rgb(25,59,153);
+    background: rgb(241, 134, 59);
     bottom: -30px;
     content: "";
     height: 3px;
@@ -8613,7 +8616,7 @@ hr {
 }
 
 .section-jobs a h5 {
-    color: rgb(25,59,153);
+    color: rgb(25, 59, 153);
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 6px
@@ -8694,7 +8697,7 @@ hr {
 }
 
 .section-locations .row-locations h4 {
-    color: rgb(25,59,153)
+    color: rgb(25, 59, 153)
 }
 
 .section-locations .row-locations p {
@@ -8899,30 +8902,30 @@ hr {
 }
 
 .section-products .row-products-list ul li:hover {
-    color: rgb(255,129,0)
+    color: rgb(255, 129, 0)
 }
 
 .section-products .row-products-list ul li:hover:before {
-    background: rgb(255,129,0)
+    background: rgb(255, 129, 0)
 }
 
 .section-products .row-products-list ul li.active {
-    color: rgb(25,59,153)
+    color: rgb(25, 59, 153)
 }
 
 @media (max-width:767px) {
     .section-products .row-products-list ul li.active {
-        color: rgb(25,59,153)
+        color: rgb(25, 59, 153)
     }
 }
 
 .section-products .row-products-list ul li.active:before {
-    background: rgb(25,59,153)
+    background: rgb(25, 59, 153)
 }
 
 @media (max-width:767px) {
     .section-products .row-products-list ul li.active:before {
-        background: rgb(25,59,153)
+        background: rgb(25, 59, 153)
     }
 }
 
@@ -9022,7 +9025,7 @@ hr {
 }
 
 .section-products .container-products-slider .product-info h3:before {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     content: "";
     height: 3px;
     left: -120px;
@@ -9344,7 +9347,7 @@ hr {
 }
 
 .section-reports .reports-list>li h5 a:hover {
-    color: rgb(25,59,153)
+    color: rgb(25, 59, 153)
 }
 
 .section-reports .reports-list>li p {
@@ -9512,7 +9515,7 @@ hr {
 }
 
 .section-stats .col-stat span:after {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     bottom: -30px;
     content: "";
     height: 3px;
@@ -9605,7 +9608,7 @@ hr {
 }
 
 .section-team h5:after {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     content: "";
     height: 86%;
     position: absolute;
@@ -9708,7 +9711,7 @@ hr {
 }
 
 .section-video .video-info i {
-    color: rgb(255,129,0);
+    color: rgb(255, 129, 0);
     font-size: 50px;
     margin-top: -25px;
     position: absolute;
@@ -9726,7 +9729,7 @@ hr {
 }
 
 .section-video .video-info:hover i {
-    color: rgb(25,59,153)
+    color: rgb(25, 59, 153)
 }
 
 .section-video .video-container {
@@ -9750,7 +9753,7 @@ hr {
 .gallery-pagination button {
     background: 0 0;
     border: 0 none;
-    color: rgb(255,129,0);
+    color: rgb(255, 129, 0);
     cursor: pointer;
     margin: 0;
     padding: 10px
@@ -9880,7 +9883,7 @@ hr {
 }
 
 .table-stylized tr td:first-child {
-    color: rgb(25,59,153);
+    color: rgb(25, 59, 153);
     font-size: 32px;
     font-weight: 600;
     line-height: 32px;
@@ -9889,7 +9892,7 @@ hr {
 }
 
 .table-stylized tr td:first-child:before {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     content: "";
     height: 3px;
     position: absolute;
@@ -9941,7 +9944,7 @@ hr {
 
 .table-stylized-blocks table tbody tr {
     background: #f8f8f8;
-    border-left: 3px rgb(25,59,153) solid;
+    border-left: 3px rgb(25, 59, 153) solid;
     padding: 0 15px 30px;
     margin-bottom: 30px;
     width: 48%
@@ -9961,7 +9964,7 @@ hr {
 }
 
 .table-stylized-blocks table tbody td:first-child {
-    color: rgb(25,59,153);
+    color: rgb(25, 59, 153);
     font-size: 32px;
     font-weight: 600;
     line-height: 32px;
@@ -10104,7 +10107,7 @@ hr {
 }
 
 .animate-transition .animate-overlay {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     display: block;
     height: 100%;
     left: 0;
@@ -10131,7 +10134,7 @@ hr {
 }
 
 .ham span {
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     display: block;
     height: 2px;
     left: 50%;
@@ -10151,7 +10154,7 @@ hr {
     transition: transform .5s cubic-bezier(.72, .01, .28, .98)
 }
 
-#header-bar {
+.header-bar {
     background: #f8f8f8;
     height: 80px;
     left: 0;
@@ -10161,84 +10164,84 @@ hr {
     z-index: 1000
 }
 
-.customize-support #header-bar {
+.customize-support .header-bar {
     top: 32px
 }
 
 @media (max-width:767px) {
-    #header-bar {
+    .header-bar {
         left: auto;
         position: relative;
         top: auto !important
     }
 }
 
-#header-bar>div {
+.header-bar>div {
     height: 80px;
     transition: box-shadow .3s cubic-bezier(.72, .01, .28, .98)
 }
 
-#header-bar.header-bar-scrolled>div {
+.header-bar.header-bar-scrolled>div {
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .05);
     transition: box-shadow .7s cubic-bezier(.72, .01, .28, .98)
 }
 
-#header-bar.header-bar-scrolled .logo .logo-mark,
-#header-bar.header-bar-scrolled .logo .logo-text {
+.header-bar.header-bar-scrolled .logo .logo-mark,
+.header-bar.header-bar-scrolled .logo .logo-text {
     transition: transform .4s cubic-bezier(.72, .01, .28, .98), opacity .2s cubic-bezier(.72, .01, .28, .98)
 }
 
-#header-bar.header-bar-scrolled .logo .logo-mark {
+.header-bar.header-bar-scrolled .logo .logo-mark {
     transform: translateX(57px)
 }
 
 @media (max-width:767px) {
-    #header-bar.header-bar-scrolled .logo .logo-mark {
+    .header-bar.header-bar-scrolled .logo .logo-mark {
         transform: translateX(0)
     }
 }
 
-#header-bar.header-bar-scrolled .logo .logo-text {
+.header-bar.header-bar-scrolled .logo .logo-text {
     opacity: 0;
     transform: translateX(-20px)
 }
 
 @media (max-width:767px) {
-    #header-bar.header-bar-scrolled .logo .logo-text {
+    .header-bar.header-bar-scrolled .logo .logo-text {
         opacity: 1;
         transform: translateX(0)
     }
 }
 
-#header-bar.header-bar-scrolled .logo:hover .logo-mark {
+.header-bar.header-bar-scrolled .logo:hover .logo-mark {
     transform: translateX(0)
 }
 
-#header-bar.header-bar-scrolled .logo:hover .logo-text {
+.header-bar.header-bar-scrolled .logo:hover .logo-text {
     opacity: 1;
     transform: translateX(0);
     transition: transform .4s cubic-bezier(.72, .01, .28, .98), opacity .5s cubic-bezier(.72, .01, .28, .98) .1s
 }
 
-#header-bar .ham,
-#header-bar .logo {
+.header-bar .ham,
+.header-bar .logo {
     z-index: 2
 }
 
-#header-bar .ham {
+.header-bar .ham {
     top: 0;
     left: 0;
     width: 120px
 }
 
 @media (max-width:767px) {
-    #header-bar .ham {
+    .header-bar .ham {
         width: 80px
     }
 }
 
-#header-bar .ham:before {
-    background: rgb(25,59,153);
+.header-bar .ham:before {
+    background: rgb(25, 59, 153);
     content: "";
     height: 2px;
     left: 50%;
@@ -10250,25 +10253,25 @@ hr {
     width: 0
 }
 
-#header-bar .ham span {
+.header-bar .ham span {
     transition: margin .25s cubic-bezier(.72, .01, .28, .98)
 }
 
-#header-bar .ham:hover:before {
+.header-bar .ham:hover:before {
     opacity: 1;
     transition: width .25s cubic-bezier(.72, .01, .28, .98) .15s;
     width: 20px
 }
 
-#header-bar .ham:hover span:first-child {
+.header-bar .ham:hover span:first-child {
     margin-top: -8px
 }
 
-#header-bar .ham:hover span:last-child {
+.header-bar .ham:hover span:last-child {
     margin-top: 4px
 }
 
-#header-bar .logo {
+.header-bar .logo {
     align-items: center;
     color: #f8f8f8;
     display: flex;
@@ -10281,20 +10284,20 @@ hr {
     width: 140px
 }
 
-#header-bar .logo .logo-mark,
-#header-bar .logo .logo-text {
+.header-bar .logo .logo-mark,
+.header-bar .logo .logo-text {
     transition: transform .4s cubic-bezier(.72, .01, .28, .98), opacity .5s cubic-bezier(.72, .01, .28, .98) .1s
 }
 
-#header-bar .logo .logo-mark {
+.header-bar .logo .logo-mark {
     width: 28px
 }
 
-#header-bar .logo .logo-text {
+.header-bar .logo .logo-text {
     width: 102px
 }
 
-#header-bar nav {
+.header-bar nav {
     height: 80px;
     padding-left: 100px;
     position: relative;
@@ -10303,12 +10306,12 @@ hr {
 }
 
 @media (max-width:767px) {
-    #header-bar nav {
+    .header-bar nav {
         display: none
     }
 }
 
-#header-bar nav ul {
+.header-bar nav ul {
     display: flex;
     font-size: 0;
     list-style: none;
@@ -10316,48 +10319,48 @@ hr {
     padding: 0
 }
 
-#header-bar nav ul li {
+.header-bar nav ul li {
     line-height: 80px
 }
 
-#header-bar nav ul li.parent>a {
+.header-bar nav ul li.parent>a {
     cursor: auto
 }
 
-#header-bar nav ul li.parent-extra:hover>a {
+.header-bar nav ul li.parent-extra:hover>a {
     padding-right: 300px
 }
 
 @media (max-width:991px) {
-    #header-bar nav ul li.highlighted {
+    .header-bar nav ul li.highlighted {
         margin-left: auto
     }
 }
 
-#header-bar nav ul li.highlighted a {
+.header-bar nav ul li.highlighted a {
     line-height: 80px;
     padding: 0 60px
 }
 
 @media (max-width:768px) {
-    #header-bar nav ul li.highlighted a {
+    .header-bar nav ul li.highlighted a {
         padding: 0 45px
     }
 }
 
 @media (max-width:991px) {
-    #header-bar nav ul li:not(.highlighted) {
+    .header-bar nav ul li:not(.highlighted) {
         display: none
     }
 }
 
-#header-bar nav ul li:not(.highlighted) a {
+.header-bar nav ul li:not(.highlighted) a {
     position: relative;
     overflow: hidden
 }
 
-#header-bar nav ul li:not(.highlighted) a:after {
-    color: rgb(25,59,153);
+.header-bar nav ul li:not(.highlighted) a:after {
+    color: rgb(25, 59, 153);
     content: attr(data-name);
     left: 20px;
     opacity: 0;
@@ -10367,35 +10370,35 @@ hr {
     z-index: 2
 }
 
-#header-bar nav ul li:not(.highlighted) a span {
+.header-bar nav ul li:not(.highlighted) a span {
     display: block;
     line-height: 80px;
     transition: all .2s cubic-bezier(.215, .61, .355, 1) 65ms
 }
 
-#header-bar nav ul li:not(.highlighted):hover>a:after {
+.header-bar nav ul li:not(.highlighted):hover>a:after {
     opacity: 1;
     transform: translateY(-20%);
     transition: all .2s cubic-bezier(.215, .61, .355, 1) .065s
 }
 
-#header-bar nav ul li:not(.highlighted):hover>a span {
+.header-bar nav ul li:not(.highlighted):hover>a span {
     opacity: 0;
     transform: translateY(-20%);
     transition: all .2s cubic-bezier(.215, .61, .355, 1)
 }
 
-#header-bar nav ul li:not(.highlighted):hover>ul {
+.header-bar nav ul li:not(.highlighted):hover>ul {
     opacity: 1;
     pointer-events: auto;
     top: 80px
 }
 
-#header-bar nav ul li.active>a {
-    color: rgb(25,59,153)
+.header-bar nav ul li.active>a {
+    color: rgb(25, 59, 153)
 }
 
-#header-bar nav ul li a {
+.header-bar nav ul li a {
     color: #333;
     display: block;
     font-size: 12px;
@@ -10407,7 +10410,7 @@ hr {
     white-space: nowrap
 }
 
-#header-bar nav ul li ul {
+.header-bar nav ul li ul {
     background: #efefef;
     border-bottom: 1px #f8f8f8 solid;
     border-top: 1px #f8f8f8 solid;
@@ -10424,9 +10427,9 @@ hr {
     width: 100%
 }
 
-#nav-drawer {
+.nav-drawer {
     align-items: center;
-    background: rgb(25,59,153);
+    background: rgb(25, 59, 153);
     display: flex;
     height: 100vh;
     overflow: auto;
@@ -10441,20 +10444,20 @@ hr {
 }
 
 @media (max-width:991px) {
-    #nav-drawer {
+    .nav-drawer {
         padding: 30px 60px
     }
 }
 
 @media (max-width:767px) {
-    #nav-drawer {
+    .nav-drawer {
         align-items: flex-start;
         background: #333;
         padding: 30px
     }
 }
 
-#nav-drawer .ham {
+.nav-drawer .ham {
     opacity: 0;
     right: 20px;
     top: 20px;
@@ -10462,20 +10465,20 @@ hr {
     z-index: 4
 }
 
-#nav-drawer .ham span {
-    background: rgb(255,129,0)
+.nav-drawer .ham span {
+    background: rgb(255, 129, 0)
 }
 
-#nav-drawer .ham:hover {
+.nav-drawer .ham:hover {
     transform: rotate(180deg)
 }
 
-#nav-drawer ul {
+.nav-drawer ul {
     list-style: none;
     padding: 0
 }
 
-#nav-drawer .nav-drawer-container {
+.nav-drawer .nav-drawer-container {
     display: flex;
     opacity: 0;
     padding-bottom: 120px;
@@ -10485,24 +10488,24 @@ hr {
 }
 
 @media (max-width:1199px) {
-    #nav-drawer .nav-drawer-container {
+    .nav-drawer .nav-drawer-container {
         display: block
     }
 }
 
 @media (max-width:767px) {
-    #nav-drawer .nav-drawer-container {
+    .nav-drawer .nav-drawer-container {
         padding-bottom: 0
     }
 }
 
-#nav-drawer .nav-drawer-container>div:first-child {
+.nav-drawer .nav-drawer-container>div:first-child {
     padding-right: 60px;
     width: 40%
 }
 
 @media (max-width:1199px) {
-    #nav-drawer .nav-drawer-container>div:first-child {
+    .nav-drawer .nav-drawer-container>div:first-child {
         margin: 0 auto 60px auto;
         padding-right: 0;
         text-align: center;
@@ -10511,42 +10514,42 @@ hr {
 }
 
 @media (max-width:767px) {
-    #nav-drawer .nav-drawer-container>div:first-child {
+    .nav-drawer .nav-drawer-container>div:first-child {
         text-align: left;
         padding: 30px 30px 0;
         width: 100%
     }
 }
 
-#nav-drawer .nav-drawer-container>div:first-child img {
+.nav-drawer .nav-drawer-container>div:first-child img {
     margin-bottom: 30px;
     width: 140px
 }
 
-#nav-drawer .nav-drawer-container>div:first-child p {
+.nav-drawer .nav-drawer-container>div:first-child p {
     font-size: 18px;
     line-height: 30px;
     color: #fff
 }
 
-#nav-drawer .nav-drawer-container>div.nav-drawer-links {
+.nav-drawer .nav-drawer-container>div.nav-drawer-links {
     display: flex
 }
 
 @media (max-width:1199px) {
-    #nav-drawer .nav-drawer-container>div.nav-drawer-links {
+    .nav-drawer .nav-drawer-container>div.nav-drawer-links {
         justify-content: center
     }
 }
 
 @media (max-width:767px) {
-    #nav-drawer .nav-drawer-container>div.nav-drawer-links {
+    .nav-drawer .nav-drawer-container>div.nav-drawer-links {
         display: block
     }
 }
 
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>a,
-#nav-drawer .nav-drawer-container #menu-nav-socials>li>a {
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>a,
+.nav-drawer .nav-drawer-container #menu-nav-socials>li>a {
     color: #555;
     cursor: auto;
     display: block;
@@ -10562,97 +10565,97 @@ hr {
 
 @media (max-width:767px) {
 
-    #nav-drawer .nav-drawer-container #menu-nav-drawer>li>a,
-    #nav-drawer .nav-drawer-container #menu-nav-socials>li>a {
+    .nav-drawer .nav-drawer-container #menu-nav-drawer>li>a,
+    .nav-drawer .nav-drawer-container #menu-nav-socials>li>a {
         font-size: 6vw;
         line-height: 6vw
     }
 }
 
-#nav-drawer .nav-drawer-container #menu-nav-drawer {
+.nav-drawer .nav-drawer-container #menu-nav-drawer {
     display: flex;
     margin-bottom: 0
 }
 
 @media (max-width:767px) {
-    #nav-drawer .nav-drawer-container #menu-nav-drawer {
+    .nav-drawer .nav-drawer-container #menu-nav-drawer {
         display: block;
         padding-right: 0;
         width: 100%
     }
 }
 
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li {
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li {
     padding: 0 60px
 }
 
 @media (max-width:767px) {
-    #nav-drawer .nav-drawer-container #menu-nav-drawer>li {
+    .nav-drawer .nav-drawer-container #menu-nav-drawer>li {
         margin-bottom: 60px;
         padding: 0 30px
     }
 }
 
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a {
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a {
     color: #fff;
     margin-bottom: 10px
 }
 
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus {
-    color: rgb(255,129,0);
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:hover,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:focus {
+    color: rgb(255, 129, 0);
     text-decoration: none
 }
 
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:before,
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:after {
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:before,
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:after {
     background: rgba(255, 255, 255, .35)
 }
 
-#nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:before {
-    background: rgb(255,129,0) !important
+.nav-drawer .nav-drawer-container #menu-nav-drawer>li>ul a:before {
+    background: rgb(255, 129, 0) !important
 }
 
-#nav-drawer .nav-drawer-container #menu-nav-socials {
+.nav-drawer .nav-drawer-container #menu-nav-socials {
     margin: 0;
     padding: 0 60px
 }
 
 @media (max-width:767px) {
-    #nav-drawer .nav-drawer-container #menu-nav-socials {
+    .nav-drawer .nav-drawer-container #menu-nav-socials {
         margin-bottom: 45px;
         padding: 0 30px
     }
 }
 
 @media (max-width:767px) {
-    #nav-drawer .nav-drawer-container #menu-nav-socials ul {
+    .nav-drawer .nav-drawer-container #menu-nav-socials ul {
         display: flex
     }
 }
 
 @media (max-width:767px) {
-    #nav-drawer .nav-drawer-container #menu-nav-socials ul li {
+    .nav-drawer .nav-drawer-container #menu-nav-socials ul li {
         padding-right: 30px
     }
 }
 
-#nav-drawer .nav-drawer-container #menu-nav-socials ul a {
+.nav-drawer .nav-drawer-container #menu-nav-socials ul a {
     color: #fff;
     display: block;
     font-size: 22px;
     padding-bottom: 10px
 }
 
-#nav-drawer .nav-drawer-container #menu-nav-socials ul a:hover {
-    color: rgb(255,129,0)
+.nav-drawer .nav-drawer-container #menu-nav-socials ul a:hover {
+    color: rgb(255, 129, 0)
 }
 
-#nav-drawer .nav-drawer-container #menu-nav-socials ul a span {
+.nav-drawer .nav-drawer-container #menu-nav-socials ul a span {
     display: none
 }
 
-#nav-drawer .nav-drawer-container .copyright {
+.nav-drawer .nav-drawer-container .copyright {
     bottom: 0;
     left: 25%;
     padding: 0 30px;
@@ -10662,14 +10665,14 @@ hr {
 }
 
 @media (max-width:991px) {
-    #nav-drawer .nav-drawer-container .copyright {
+    .nav-drawer .nav-drawer-container .copyright {
         left: 0;
         width: 100%
     }
 }
 
 @media (max-width:767px) {
-    #nav-drawer .nav-drawer-container .copyright {
+    .nav-drawer .nav-drawer-container .copyright {
         bottom: auto;
         left: auto;
         position: relative;
@@ -10677,7 +10680,7 @@ hr {
     }
 }
 
-#nav-drawer .nav-drawer-container .copyright p {
+.nav-drawer .nav-drawer-container .copyright p {
     color: rgba(255, 255, 255, .5);
     font-family: "Average Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 600;
@@ -10686,36 +10689,36 @@ hr {
 }
 
 @media (max-width:767px) {
-    #nav-drawer .nav-drawer-container .copyright p {
+    .nav-drawer .nav-drawer-container .copyright p {
         line-height: 18px
     }
 }
 
-#nav-drawer .nav-drawer-container .copyright p.classification {
+.nav-drawer .nav-drawer-container .copyright p.classification {
     color: rgba(255, 255, 255, .35);
     font-size: 13px;
     line-height: 18px;
     margin-bottom: 0
 }
 
-#nav-drawer .nav-drawer-container .copyright span {
+.nav-drawer .nav-drawer-container .copyright span {
     display: block;
     font-weight: 400;
     font-size: 13px
 }
 
 @media (max-width:767px) {
-    #nav-drawer .nav-drawer-container .copyright span {
+    .nav-drawer .nav-drawer-container .copyright span {
         margin-top: 15px
     }
 }
 
-#nav-drawer .nav-drawer-container .copyright span a {
+.nav-drawer .nav-drawer-container .copyright span a {
     display: inline-block;
     position: relative
 }
 
-#nav-drawer .nav-drawer-container .copyright span a:after {
+.nav-drawer .nav-drawer-container .copyright span a:after {
     background: rgba(182, 164, 130, .25);
     bottom: -1px;
     content: "";
@@ -10726,15 +10729,15 @@ hr {
     width: 100%
 }
 
-#nav-drawer .nav-drawer-container .copyright span a:hover {
-    color: rgb(255,129,0)
+.nav-drawer .nav-drawer-container .copyright span a:hover {
+    color: rgb(255, 129, 0)
 }
 
-#nav-drawer .nav-drawer-container .copyright span a:hover:after {
-    color: rgb(255,129,0)
+.nav-drawer .nav-drawer-container .copyright span a:hover:after {
+    color: rgb(255, 129, 0)
 }
 
-#nav-drawer .nav-drawer-bg {
+.nav-drawer .nav-drawer-bg {
     background: #333;
     content: "";
     height: 100%;
@@ -10747,39 +10750,39 @@ hr {
     z-index: 2
 }
 
-#nav-toggle:checked~#nav-drawer {
+#nav-toggle:checked~.nav-drawer {
     transform: translateX(0);
     transition: all .5s cubic-bezier(.64, .04, .35, 1)
 }
 
-#nav-toggle:checked~#nav-drawer .ham {
+#nav-toggle:checked~.nav-drawer .ham {
     opacity: 1
 }
 
-#nav-toggle:checked~#nav-drawer .ham span {
+#nav-toggle:checked~.nav-drawer .ham span {
     transform: scaleX(0) translateZ(0);
     transition-delay: .4s
 }
 
-#nav-toggle:checked~#nav-drawer .ham span:first-child {
+#nav-toggle:checked~.nav-drawer .ham span:first-child {
     transform: rotate(45deg) translate3d(3px, 3px, 0)
 }
 
-#nav-toggle:checked~#nav-drawer .ham span:last-child {
+#nav-toggle:checked~.nav-drawer .ham span:last-child {
     transform: rotate(-45deg) translate3d(1px, -1px, 0)
 }
 
-#nav-toggle:checked~#nav-drawer .nav-drawer-container {
+#nav-toggle:checked~.nav-drawer .nav-drawer-container {
     opacity: 1;
     transition: opacity .75s ease .75s
 }
 
-#nav-toggle:checked~#nav-drawer .nav-drawer-bg {
+#nav-toggle:checked~.nav-drawer .nav-drawer-bg {
     width: 100%
 }
 
-#header-bar,
-#main,
+.header-bar,
+.main,
 #footer {
     transform: translateX(0);
     transition: transform .5s cubic-bezier(.64, .045, .35, 1) .5s
@@ -10787,15 +10790,15 @@ hr {
 
 @media (max-width:767px) {
 
-    #header-bar,
-    #main,
+    .header-bar,
+    .main,
     #footer {
         transform: none
     }
 }
 
-#header-bar:before,
-#main:before,
+.header-bar:before,
+.main:before,
 #footer:before {
     background: #000;
     content: "";
@@ -10810,8 +10813,8 @@ hr {
     z-index: 1001
 }
 
-#nav-toggle:checked~#header-bar,
-#nav-toggle:checked~#main,
+#nav-toggle:checked~.header-bar,
+#nav-toggle:checked~.main,
 #nav-toggle:checked~#footer {
     transform: translateX(250px);
     transition: transform .7s cubic-bezier(.64, .045, .35, 1)
@@ -10819,15 +10822,15 @@ hr {
 
 @media (max-width:767px) {
 
-    #nav-toggle:checked~#header-bar,
-    #nav-toggle:checked~#main,
+    #nav-toggle:checked~.header-bar,
+    #nav-toggle:checked~.main,
     #nav-toggle:checked~#footer {
         transform: none
     }
 }
 
-#nav-toggle:checked~#header-bar:before,
-#nav-toggle:checked~#main:before,
+#nav-toggle:checked~.header-bar:before,
+#nav-toggle:checked~.main:before,
 #nav-toggle:checked~#footer:before {
     left: 0;
     opacity: .5;

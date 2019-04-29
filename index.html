@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <title>Candor Nigeria</title>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle" class="hidden">
+    <nav class="nav-drawer">
+        <label class="ham" for="nav-toggle">
+            <span></span>
+            <span></span>
+        </label>
+        <div class="nav-drawer-container">
+            <div>
+                <a href="#">
+                    <img src="assets/img/logo.png" alt="Candor Logo"></a>
+                <p>A hollistic business services company, offering Human Resource and Busness management service, to
+                    businesses great and small..</p>
+            </div>
+            <div class="nav-drawer-links">
+                <ul id="menu-nav-drawer" class="">
+                    <li class="parent">
+                        <a href="#" data-name="Menu"><span>Menu</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="#about" data-name="Who We Are"><span>Who We Are</span></a></li>
+                            <li><a href="#services" data-name="Reports"><span>What We Do</span></a></li>
+                            <li><a href="#media" data-name="Careers"><span>Media</span></a></li>
+                            <li><a href="#contact" data-name="Get in Touch"><span>Get in Touch</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="menu-nav-socials" class="">
+                    <li class="parent"><a href="#" data-name="Socials"><span>Socials</span></a>
+                        <ul class="sub-menu">
+                            <li><a target="_blank" href="#" data-name="Facebook">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li><a target="_blank" href="#" data-name="Twiiter">
+                                    Twitter
+                                </a></li>
+                            <li><a target="_blank" href="#" data-name="Instagram">
+                                    Instagram
+                                </a></li>
+                            <li><a target="_blank" href="#" data-name="LinkedIn">
+                                    LinkedIn
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2019 Candor Nigeria.</p>
+            </div>
+        </div>
+        <div class="nav-drawer-bg"></div>
+    </nav>
+    <header class="header-bar">
+        <div>
+            <label class="ham" for="nav-toggle">
+                <span></span>
+                <span></span>
+            </label>
+            <a class="logo" href="/">
+                <img src="http://www.candor.ng/img/logo.png" alt="" />
+            </a>
+            <nav>
+                <ul id="menu-nav-header" class="">
+                    <li>
+                        <a href="#about" data-name="Who We Are"><span>Who We Are</span></a>
+                    </li>
+                    <li>
+                        <a href="#services" data-name="What We Do"><span>What We Do</span></a>
+                    </li>
+                    <li class="ml-auto px-2">
+                        <a href="#media" data-name="Media"><span>Media</span></a>
+                    </li>
+                    <li class="highlighted">
+                        <a href="#contact" data-name="Careers"><span>Get In Touch</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div id="app">
+
+        </div>
+
+        <div class="liner animated slideInDown"><span></span></div>
+    </main>
+    <footer id="footer" class="footer-get-in-touch footer-no-img">
+        <a href="#contact">
+            <h2><span>
+                    <p>Want more?</p>
+                </span>Get in Touch</h2>
+        </a>
+    </footer>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/route.js"></script>
+    <script src="assets/js/router.js"></script>
+    <script src="index.js"></script>
+    <script>
+    $(document).ready(function(e){
+        $("#menu-nav-drawer a").click(function(e){
+            $("#nav-toggle").prop("checked", false)
+        })
+    });
+        </script>
+</body>
+
+</html>

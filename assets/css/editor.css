@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Average+Sans');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  font-family: "Average Sans"
+}
+
+.sidenav {
+  height: 150px;
+  width: 15%;
+  position: absolute;
+  background-color: rgb(25, 59, 153);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  bottom: 0;
+  z-index: 9;
+  right: 0;  
+    box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer !important;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
