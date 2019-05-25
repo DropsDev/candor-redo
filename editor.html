@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" href="assets/libs/grapesjs/grapesjs.css" />
+    <link rel="stylesheet" href="assets/libs/ladda/ladda.css" />
     <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/editor.css" />
 </head>
@@ -25,12 +26,13 @@
             </div>
 
         <div>
-            <button class="btn-submit" onclick="jsSave()">Save Changes</button>
+            <button id="submit-button" class="btn-submit" onclick="jsSave()">Save Changes</button>
         </div>
         </div>
     </div>
 
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/libs/ladda/ladda.js"></script>
     <script src="assets/js/toastr.js"></script>
     <script src="assets/libs/grapesjs/grapesjs.js"></script>
     <script src="./editor.js"></script>

@@ -1,7 +1,8 @@
 var editor = {};
 var styleurl = "assets/css/app.css";
-var allCss = ""
-var path = ""
+var allCss = "";
+var path = "";
+var l = "";
 function jsload(file, name) {
     path = file;
     var styleFile = new XMLHttpRequest();
@@ -42,6 +43,7 @@ function jsload(file, name) {
     rawFile.send(null);
 }
 function jsSave() {
+    l.start();
     $content = editor.getHtml();
     $.ajax({
         type: 'POST',
@@ -53,40 +55,42 @@ function jsSave() {
         },
         success: function (data) {
             toastr.success("Page Updated")
+            l.stop();
         },
         error: function (jqXhr) {
-            toastr.error("Page Failed")
+            toastr.error("Page Failed");
+            l.stop();
         }
     })
 }
-jsload("views/home.html", "Home")
-var btn = document.getElementById("page-button");
 
-var dropdown = document.querySelector(".dropdown-options");
-var optionLinks = document.querySelectorAll(".option a");
-console.log(optionLinks);
+$(document).ready(function () {
+    l = Ladda.create(document.getElementById('submit-button'));
+    jsload("views/home.html", "Home")
+    var btn = document.getElementById("page-button");
+    var dropdown = document.querySelector(".dropdown-options");
+    var optionLinks = document.querySelectorAll(".option a");
+    btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        dropdown.classList.toggle("open");
+    });
 
-btn.addEventListener("click", function(e) {
-   e.preventDefault();
-   console.log("btn");
-   dropdown.classList.toggle("open");
-});
+    var clickFn = function (e) {
+        e.preventDefault();
 
-var clickFn = function(e) {
-   e.preventDefault();
+        dropdown.classList.remove("open");
 
-   dropdown.classList.remove("open");
+        btn.innerHTML = this.text;
+        var activeLink = document.querySelector(".option .active")
 
-   btn.innerHTML = this.text;
-   var activeLink = document.querySelector(".option .active")
+        if (activeLink) {
+            activeLink.classList.remove("active");
+        }
 
-   if (activeLink) {
-      activeLink.classList.remove("active");
-   }
+        this.classList.add("active");
+    }
 
-   this.classList.add("active");
-}
-
-for (var i = 0; i < optionLinks.length; i++) {
-   optionLinks[i].addEventListener("mousedown", clickFn, false);
-}
+    for (var i = 0; i < optionLinks.length; i++) {
+        optionLinks[i].addEventListener("mousedown", clickFn, false);
+    }
+})
