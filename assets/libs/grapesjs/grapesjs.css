@@ -1,3 +1,8 @@
+#wrapper{
+    box-shadow: 0 0 25px rgba(0, 0, 0, .11);
+    border-radius: 8px;
+    margin: 20px;
+}
 .sp-container {
     position: absolute;
     top: 0;
@@ -1607,7 +1612,6 @@ span.CodeMirror-selectedtext {
 }
 
 .gjs-cv-canvas {
-    background-color: rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
     width: 85%;
     height: calc(100% - 40px);

@@ -40759,25 +40759,25 @@ module.exports = {
     buttons: [{
       active: true,
       id: swv,
-      className: 'fa fa-square-o',
+      className: 'fa fa-square-o fa-lg',
       command: swv,
       context: swv,
       attributes: { title: 'View components' }
     }, {
       id: prv,
-      className: 'fa fa-eye',
+      className: 'fa fa-eye fa-lg',
       command: prv,
       context: prv,
       attributes: { title: 'Preview' }
     }, {
       id: ful,
-      className: 'fa fa-arrows-alt',
+      className: 'fa fa-arrows-alt fa-lg',
       command: ful,
       context: ful,
       attributes: { title: 'Fullscreen' }
     }, {
       id: expt,
-      className: 'fa fa-code',
+      className: 'fa fa-code fa-lg',
       command: expt,
       attributes: { title: 'View code' }
     }]
@@ -40785,26 +40785,27 @@ module.exports = {
     id: 'views',
     buttons: [{
       id: osm,
-      className: 'fa fa-paint-brush',
+      className: 'fa fa-paint-brush fa-lg',
       command: osm,
       active: true,
       togglable: 0,
       attributes: { title: 'Open Style Manager' }
     }, {
-      id: otm,
-      className: 'fa fa-cog',
-      command: otm,
-      togglable: 0,
-      attributes: { title: 'Settings' }
-    }, {
       id: ola,
-      className: 'fa fa-bars',
+      className: 'fa fa-bars fa-lg',
       command: ola,
       togglable: 0,
       attributes: { title: 'Open Layer Manager' }
-    }, {
+    },
+    {
+      id: otm,
+      className: 'fa fa-cog fa-lg',
+      command: otm,
+      togglable: 0,
+      attributes: { title: 'Settings' }
+    },{
       id: obl,
-      className: 'fa fa-th-large',
+      className: 'fa fa-th-large fa-lg',
       command: obl,
       togglable: 0,
       attributes: { title: 'Open Blocks' }
