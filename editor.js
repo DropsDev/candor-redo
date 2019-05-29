@@ -44,7 +44,7 @@ function jsload(file, name) {
                 const am = editor.AssetManager;
                 editor.on('asset:upload:start', (response) => {
                     console.log(response)
-                    loading();
+                     loading();
                 });
                 editor.on('asset:upload:end', (response) => {
                     console.log(response)
@@ -57,7 +57,11 @@ function jsload(file, name) {
                 });
                 editor.on('asset:upload:response', (response) => {
                 });
-                stopLoading()
+                editor.on('load', (response) => {
+                    setTimeout(() => {
+                    stopLoading()
+                    }, 1500);
+                });
             }
         }
     }
@@ -90,6 +94,7 @@ function stopLoading() {
     document.getElementById('mask').style.display = 'none';
 }
 function loading() {
+    document.getElementById('popup').style.display = 'block';
     document.getElementById('mask').style.display = 'block';
 }
 
