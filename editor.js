@@ -1,9 +1,11 @@
-var editor = {};
 var styleurl = "assets/css/app.css";
 var allCss = "";
 var path = "";
 var l = "";
+var d = new Date();
+var editor = {}
 function jsload(file, name) {
+    loading();
     path = file;
     var styleFile = new XMLHttpRequest();
     styleFile.open("GET", styleurl, false);
@@ -24,18 +26,38 @@ function jsload(file, name) {
                     html: allText,
                     css: allCss
                 };
-                editor =
-                    grapesjs.init({
-                        container: '#gjs',
-                        components: page.html,
-                        style: page.css,
-                        storageManager:
-                        {
-                            autosave: false
-                        },
-                    });
-                // editor.getComponents().add('<link rel="stylesheet" href="http://localhost:8888/candor-redo/assets/css/app.css">');
-                $("#txtCurrent").html(name)
+                editor = grapesjs.init({
+                    container: '#gjs',
+                    components: page.html,
+                    style: page.css,
+                    storageManager:
+                    {
+                        autosave: false
+                    },
+                    assetManager: {
+                        upload: 'upload.php',
+                        uploadName: "file",
+                        multiUpload: false,
+                    },
+                });
+
+                const am = editor.AssetManager;
+                editor.on('asset:upload:start', (response) => {
+                    console.log(response)
+                    loading();
+                });
+                editor.on('asset:upload:end', (response) => {
+                    console.log(response)
+                    am.add('https://.../image.png');
+                    stopLoading();
+                });
+                editor.on('asset:upload:error', (err) => {
+                    console.log(err)
+                    toastr.error("An error occurred");
+                });
+                editor.on('asset:upload:response', (response) => {
+                });
+                stopLoading()
             }
         }
     }
@@ -58,10 +80,17 @@ function jsSave() {
             l.stop();
         },
         error: function (jqXhr) {
-            toastr.error("Page Failed");
+            toastr.error("Page Update Failed");
             l.stop();
         }
     })
+}
+function stopLoading() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('mask').style.display = 'none';
+}
+function loading() {
+    document.getElementById('mask').style.display = 'block';
 }
 
 $(document).ready(function () {
