@@ -48,7 +48,7 @@ function jsload(file, name) {
                 });
                 editor.on('asset:upload:end', (response) => {
                     console.log(response)
-                    am.add('https://.../image.png');
+                    am.add(response);
                     stopLoading();
                 });
                 editor.on('asset:upload:error', (err) => {
