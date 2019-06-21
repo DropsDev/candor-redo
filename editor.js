@@ -43,16 +43,13 @@ function jsload(file, name) {
 
                 const am = editor.AssetManager;
                 editor.on('asset:upload:start', (response) => {
-                    console.log(response)
                      loading();
                 });
                 editor.on('asset:upload:end', (response) => {
-                    console.log(response)
                     am.add(response);
                     stopLoading();
                 });
                 editor.on('asset:upload:error', (err) => {
-                    console.log(err)
                     toastr.error("An error occurred");
                 });
                 editor.on('asset:upload:response', (response) => {
@@ -71,17 +68,31 @@ function jsload(file, name) {
 function jsSave() {
     l.start();
     $content = editor.getHtml();
+    let arr = $content.match(/.{1,1000}(?=(.{2})+(?!.))|.{1,2}$/g);
     $.ajax({
         type: 'POST',
-        url: "writer.php",
-        dataType: "html",
-        data: {
-            data: $content,
-            location: path
-        },
+        url: "clear.php",
         success: function (data) {
-            toastr.success("Page Updated")
-            l.stop();
+          /*  arr.forEach(element => {
+             console.log(path)  
+            $.ajax({
+                type: 'POST',
+                url: "writer.php",
+                dataType: "html",
+                data: {
+                    data: element,
+                    location: path
+                },
+                success: function (data) {
+                    toastr.success("Page Updated")
+                    l.stop();
+                },
+                error: function (jqXhr) {
+                    toastr.error("Page Update Failed");
+                    l.stop();
+                }
+            }) 
+            });*/
         },
         error: function (jqXhr) {
             toastr.error("Page Update Failed");
